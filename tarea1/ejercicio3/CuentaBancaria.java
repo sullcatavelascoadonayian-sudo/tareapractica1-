@@ -6,11 +6,8 @@
  *
  */
 public class CuentaBancaria {
-    /* Nombre del titular de la cuenta */
     private String titular;
-    /* Numero unico de cuenta */
     private String nroCuenta;
-    /* Saldo disponible en la cuenta */
     private double saldo;
     public CuentaBancaria(String titular, String nroCuenta, double saldoInicial) {
         this.titular = titular;
@@ -43,25 +40,19 @@ public class CuentaBancaria {
                " | Nro. Cuenta: " + this.nroCuenta + 
                " | Saldo: $" + this.saldo;
     }
-    /** Metodo Principal */
     public static void main(String[] args) {
-        // Crear una nueva cuenta
         CuentaBancaria cuenta = new CuentaBancaria("Juan Perez", "100-200-300", 500.0);
-        // d) Mostrar datos de la cuenta inicialmente
         System.out.println("--- DATOS DE LA CUENTA ---");
         System.out.println(cuenta.toString());
         System.out.println();
-
-        // Pruebas de depósito
         System.out.println("--- PRUEBAS DE DEPOSITO ---");
-        cuenta.depositar(-50); // c) Error: deposito negativo
-        cuenta.depositar(0);   // c) Error: deposito 0
-        cuenta.depositar(200); // Deposito correcto
+        cuenta.depositar(-50); 
+        cuenta.depositar(0);  
+        cuenta.depositar(200); 
         System.out.println();
-        // Pruebas de retiro
         System.out.println("--- PRUEBAS DE RETIRO ---");
-        cuenta.retirar(1000);  // b) Error: retirar mas dinero del saldo
-        cuenta.retirar(300);   // Retiro correcto
+        cuenta.retirar(1000);  
+        cuenta.retirar(300);   
         System.out.println();
         // d) Mostrar datos finales
         System.out.println("--- DATOS FINALES DE LA CUENTA ---");
