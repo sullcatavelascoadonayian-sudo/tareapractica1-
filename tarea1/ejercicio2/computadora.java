@@ -1,32 +1,26 @@
 public class computadora {
-    // Atributos privados según el diagrama UML
     private String marca;
     private String procesador;
     private int ram;
     private int almacenamiento;
-    // Constructor 1: por defecto (sin parámetros)
     public computadora() {
         this.marca = "Sin marca";
         this.procesador = "Sin procesador";
         this.ram = 0;
         this.almacenamiento = 0;
     }
-    // Constructor 2: parametrizado (recibe todos los datos)
     public computadora(String marca, String procesador, int ram, int almacenamiento) {
         this.marca = marca;
         this.procesador = procesador;
         this.ram = ram;
         this.almacenamiento = almacenamiento;
     }
-    // Getter para obtener la RAM
     public int getRam() {
         return this.ram;
     }
-    // b) Método para determinar si la RAM es igual a X
     public boolean tieneRamIgualA(int x) {
         return this.ram == x;
     }
-    // Método auxiliar para mostrar los datos
     public void mostrarDatos() {
         System.out.println("Marca: " + marca);
         System.out.println("Procesador: " + procesador);
@@ -47,9 +41,8 @@ public class computadora {
     }
     public static void main(String[] args) {
         // a) Instanciar 2 objetos de diferente forma
-        computadora pc1 = new computadora(); // Forma 1: Usando constructor por defecto
-        computadora pc2 = new computadora("Asus", "Intel i7", 16, 1024); // Forma 2: Usando constructor parametrizado
-        // Asignamos datos a pc1 para probar los incisos b y c
+        computadora pc1 = new computadora(); 
+        computadora pc2 = new computadora("Asus", "Intel i7", 16, 1024); 
         pc1.marca = "Lenovo";
         pc1.procesador = "Ryzen 5";
         pc1.ram = 8;
