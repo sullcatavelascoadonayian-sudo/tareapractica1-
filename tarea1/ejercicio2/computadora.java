@@ -40,7 +40,7 @@ public class computadora {
         }
     }
     public static void main(String[] args) {
-        // a) Instanciar 2 objetos de diferente forma
+        // a) Instanciar 2 objetos dediferente forma
         computadora pc1 = new computadora(); 
         computadora pc2 = new computadora("Asus", "Intel i7", 16, 1024); 
         pc1.marca = "Lenovo";
