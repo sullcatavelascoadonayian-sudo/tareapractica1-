@@ -15,7 +15,7 @@ public class Bus {
         this.placa = placa;
         this.capacidadAsientos = capacidadAsientos;
         this.pasajerosActuales = 0;
-        this.costoPasaje = 1.50; // Costo por defecto bs. 1.50
+        this.costoPasaje = 1.50; 
         this.totalRecaudado = 0.0;
     }
     /* a)actualizar los datos del bus */
@@ -28,7 +28,7 @@ public class Bus {
         } else {
             this.pasajerosActuales += x;
             System.out.println("Subieron " + x + " pasajeros con exito.");
-            cobrarPasaje(x); // b) Cobramos el pasaje a los que subieron
+            cobrarPasaje(x); 
         }
     }
     /* b) cobrar pasaje a los pasajeros */
